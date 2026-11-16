@@ -1,0 +1,12 @@
+{
+  "event_id": "4d11a383-2056-4b91-960e-821a4793c002",
+  "timestamp": "2026-11-16T14:10:00Z",
+  "event_type": "registry_value_change",
+  "source": "Synthetic Sysmon-style endpoint policy event",
+  "description": "registry_value_change; Image=C:\\Windows\\System32\\reg.exe; TargetObject=HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\TempHelper; Details=C:\\Users\\labuser\\AppData\\Local\\Temp\\helper.exe; raw_message=Registry value set on training workstation LAB-08. The user-level startup value points to an unsigned temporary executable. Endpoint telemetry confirms the value was created, but no startup execution, credential access, or network connection followed. The policy engine independently confirms this exact value is unauthorized and can be removed without changing other Run entries. The original value was absent, so removal of this one value is reversible by restoring the recorded registry export. This is suspicious unconfirmed persistence on a noncritical lab endpoint.",
+  "raw_log": "Synthetic endpoint policy: policy_id=USER-RUN-02; host=LAB-08; scope=current_user; target=HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\TempHelper; prior_state=absent; finding=unauthorized user-level startup value; process_execution=not_observed; approved_cleanup=remove_only_named_value; rollback=recorded_registry_export.",
+  "action": "registry_value_change",
+  "category": "Windows telemetry",
+  "asset_criticality": "low",
+  "synthetic_demo": true
+}

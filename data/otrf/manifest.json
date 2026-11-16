@@ -1,0 +1,63 @@
+{
+  "collection": "otrf_recorded_events_v1",
+  "source": "OTRF Security-Datasets lab-captured Windows event logs",
+  "disposition_labels": "none; event-level records only",
+  "sources": {
+    "mimikatz": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/credential_access/host/empire_mimikatz_logonpasswords.zip",
+      "zip_sha256": "bb4c057b62d781be5426e011872ba1a15070c07afbb24848a14458f4b22b06fb"
+    },
+    "psexec": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/lateral_movement/host/empire_psexec_dcerpc_tcp_svcctl.zip",
+      "zip_sha256": "8f40e7fc86bbbf31ebd50b3ba537cf0f4378392ae3e74de84bee00aeb0de1fa5"
+    },
+    "wmi": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/lateral_movement/host/empire_wmi_dcerpc_wmi_IWbemServices_ExecMethod.zip",
+      "zip_sha256": "96f1dbd9c5b077c8951b6e1f43b7fe01a2620c649889262481f15139a1746d88"
+    },
+    "bitsadmin": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/defense_evasion/host/cmd_bitsadmin_download_psh_script.zip",
+      "zip_sha256": "8fb7bc9f3d82f672dc39a55e50006137aa540c4a9860acdcc5d08a4fd609b594"
+    },
+    "mshta": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/defense_evasion/host/cmd_mshta_javascript_getobject_sct.zip",
+      "zip_sha256": "976a705690dcc296ba132b9cd594c004265911e9e40d402c879dd06eddbbc057"
+    },
+    "wevtutil": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/defense_evasion/host/cmd_wevtutil_modify_security_eventlog_path.zip",
+      "zip_sha256": "2ea34cf2d3526e30f9fe004fc4f53f8a04d8e6885e697d77c44102567279ac67"
+    },
+    "psremoting": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/lateral_movement/host/empire_psremoting_stager.zip",
+      "zip_sha256": "214355730c8cf903f4423c96aa7459fed7b74258e2a6766b794ba316e9d3a46e"
+    },
+    "smbexec": {
+      "url": "https://raw.githubusercontent.com/OTRF/Security-Datasets/master/datasets/atomic/windows/lateral_movement/host/empire_smbexec_dcerpc_smb_svcctl.zip",
+      "zip_sha256": "c0fc435c9ce0ecdc7cd57b4055977b949ac6b1cae9d7f4ce7aa0f0e5eae7d7f1"
+    }
+  },
+  "selected_event_count": 1177,
+  "indexed_event_count": 1172,
+  "demo_holdout_ids": [
+    "4593b9ed-f63b-5eac-98e7-85ddfff2f006",
+    "c3e06ca2-fae4-521e-99c2-8bb62700f39e",
+    "dbfdc080-b686-59d6-ac30-5b2498def4b0",
+    "ec666301-17f4-5102-82d0-8d792aee11a4",
+    "edc107b7-6e2b-5733-b584-8090db266182"
+  ],
+  "event_codes": {
+    "10": 432,
+    "12": 440,
+    "3": 71,
+    "4624": 61,
+    "11": 16,
+    "13": 88,
+    "1": 7,
+    "4688": 43,
+    "5145": 5,
+    "22": 4,
+    "4697": 2,
+    "1102": 2,
+    "7045": 1
+  }
+}

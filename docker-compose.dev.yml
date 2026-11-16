@@ -1,0 +1,6 @@
+services:
+  app:
+    volumes:
+      - ./soc_triage:/app/soc_triage:ro
+      - ./data/otrf/demo_alerts:/app/data/otrf/demo_alerts:ro
+      - ./data/synthetic_demo_alerts:/app/data/synthetic_demo_alerts:ro

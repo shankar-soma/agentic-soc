@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soc-triage"
+version = "0.1.0"
+description = "Multi-agent alert triage for an Agentic SOC (LangGraph + RAG + guardrails)"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "langchain>=1.3,<2",
+    "langgraph>=1.2,<2",
+    "qdrant-client>=1.12,<1.13",
+    "fastembed>=0.3",
+    "httpx>=0.27",
+    "gradio>=4.44",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+anthropic = ["langchain-anthropic>=1.7,<2"]
+openai = ["langchain-openai>=1.8,<2"]
+
+[tool.setuptools.packages.find]
+include = ["soc_triage*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

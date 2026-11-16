@@ -1,0 +1,11 @@
+.git
+.venv
+.qdrant
+.qdrant_test
+__pycache__
+*.pyc
+.env
+PLAN.md
+.pytest_cache
+data/otrf/source_zips
+audit.jsonl

@@ -1,0 +1,12 @@
+{
+  "event_id": "6a074a50-2e47-45f8-a273-8ee41cb30c01",
+  "timestamp": "2026-11-16T14:05:00Z",
+  "event_type": "registry_value_change",
+  "source": "Synthetic Sysmon-style endpoint policy event",
+  "description": "registry_value_change; Image=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe; TargetObject=HKCU\\Software\\ExampleCorp\\Browser\\HomePage; Details=https://example.invalid/start; raw_message=Registry value set. Endpoint policy then confirmed this is a user-level browser preference on disposable training workstation LAB-07. The value differs from the approved homepage https://intranet.example.invalid. No elevated rights, startup entry, security-control change, or suspicious network connection was observed. The policy record contains the exact previous value and permits restoring only this one preference. This is a minor configuration drift with a reversible one-value cleanup.",
+  "raw_log": "Synthetic endpoint policy: policy_id=BROWSER-HOME-01; host=LAB-07; scope=current_user; current_value=https://example.invalid/start; approved_value=https://intranet.example.invalid; change_scope=one registry value; rollback_value=https://example.invalid/start; finding=unapproved but low-impact preference change.",
+  "action": "registry_value_change",
+  "category": "Windows telemetry",
+  "asset_criticality": "low",
+  "synthetic_demo": true
+}
